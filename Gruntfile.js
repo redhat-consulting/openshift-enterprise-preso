@@ -100,7 +100,7 @@ module.exports = function(grunt) {
 					hostname: server_ip,
 					base: '.',
                     livereload: true,
-                    open: true
+                    open: false
 				}
 			}
 		},
@@ -118,7 +118,7 @@ module.exports = function(grunt) {
 
 		watch: {
             options: {
-                livereload: true
+                livereload: false
             },
 			js: {
 				files: [ 'Gruntfile.js', 'js/reveal.js' ],
@@ -170,6 +170,7 @@ module.exports = function(grunt) {
 
 	// Serve presentation locally
 	grunt.registerTask( 'serve', [ 'connect', 'watch' ] );
+	//grunt.registerTask( 'serve', [ 'connect' ] );
 
 	// Run tests
 	grunt.registerTask( 'test', [ 'jshint', 'qunit' ] );
