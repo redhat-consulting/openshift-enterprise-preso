@@ -1,6 +1,8 @@
 /* global module:false */
 module.exports = function(grunt) {
-	var port = grunt.option('port') || 8000;
+	//var port = grunt.option('port') || 8000;
+	var port = process.env.OPENSHIFT_NODEJS_PORT || 8000;
+	var server_ip = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
 	// Project configuration
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
@@ -95,6 +97,7 @@ module.exports = function(grunt) {
 			server: {
 				options: {
 					port: port,
+					hostname: server_ip,
 					base: '.',
                     livereload: true,
                     open: true

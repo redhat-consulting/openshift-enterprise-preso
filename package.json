@@ -5,17 +5,17 @@
   "homepage": "http://lab.hakim.se/reveal-js",
   "subdomain": "revealjs",
   "scripts": {
-    "test": "grunt test",
-    "start": ""
+    "test": "node_modules/grunt-cli/bin/grunt test",
+    "start": "node_modules/grunt-cli/bin/grunt serve"
   },
   "author": {
-    "name": "Hakim El Hattab",
-    "email": "hakim.elhattab@gmail.com",
-    "web": "http://hakim.se"
+    "name": "Eric Sauer",
+    "email": "eric@redhat.com",
+    "web": "redhat.com"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/hakimel/reveal.js.git"
+    "url": "git://github.com/redhat-consulting/slide-template.git"
   },
   "engines": {
     "node": "~0.10.0"
@@ -24,7 +24,9 @@
     "underscore": "~1.5.1",
     "express": "~2.5.9",
     "mustache": "~0.7.2",
-    "socket.io": "~0.9.16"
+    "socket.io": "~0.9.16",
+    "grunt-cli": "~0.1.13",
+    "grunt": "~0.4.5"
   },
   "devDependencies": {
     "grunt-contrib-qunit": "~0.5.2",
@@ -44,5 +46,6 @@
       "type": "MIT",
       "url": "https://github.com/hakimel/reveal.js/blob/master/LICENSE"
     }
-  ]
+  ],
+  "main": "Gruntfile.js"
 }
