@@ -13,14 +13,19 @@ section.has-light-background, section.has-light-background h1, section.has-light
  * GLOBAL STYLES
  *********************************************/
 body {
-  background: #820000;
-  background-color: #820000; }
+  background: #004153;
+  background-image: url('/css/theme/source/Logo.png');
+  background-size: 20% auto;
+  background-attachment: local;
+  background-repeat: no-repeat;
+  background-position: 5% 95%;
+  background-color: #004153; }
 
 .reveal {
   font-family: 'Overpass', sans-serif;
   font-size: 36px;
   font-weight: normal;
-  color: #000; }
+  color: #A3DBE8; }
 
 ::selection {
   color: #fff;
@@ -183,20 +188,20 @@ body {
  * LINKS
  *********************************************/
 .reveal a {
-  color: #4c4c4c;
+  color: #dcdcdc;
   text-decoration: none;
   -webkit-transition: color 0.15s ease;
   -moz-transition: color 0.15s ease;
   transition: color 0.15s ease; }
 
 .reveal a:hover {
-  color: #8c8c8c;
+  color: white;
   text-shadow: none;
   border: none; }
 
 .reveal .roll span:after {
   color: #fff;
-  background: #262626; }
+  background: #b6b6b6; }
 
 /*********************************************
  * IMAGES
@@ -204,7 +209,7 @@ body {
 .reveal section img {
   margin: 15px 0px;
   background: rgba(255, 255, 255, 0.12);
-  border: 4px solid #000;
+  border: 4px solid #A3DBE8;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); }
 
 .reveal a img {
@@ -214,35 +219,35 @@ body {
 
 .reveal a:hover img {
   background: rgba(255, 255, 255, 0.2);
-  border-color: #4c4c4c;
+  border-color: #dcdcdc;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
 
 /*********************************************
  * NAVIGATION CONTROLS
  *********************************************/
 .reveal .controls div.navigate-left, .reveal .controls div.navigate-left.enabled {
-  border-right-color: #4c4c4c; }
+  border-right-color: #dcdcdc; }
 
 .reveal .controls div.navigate-right, .reveal .controls div.navigate-right.enabled {
-  border-left-color: #4c4c4c; }
+  border-left-color: #dcdcdc; }
 
 .reveal .controls div.navigate-up, .reveal .controls div.navigate-up.enabled {
-  border-bottom-color: #4c4c4c; }
+  border-bottom-color: #dcdcdc; }
 
 .reveal .controls div.navigate-down, .reveal .controls div.navigate-down.enabled {
-  border-top-color: #4c4c4c; }
+  border-top-color: #dcdcdc; }
 
 .reveal .controls div.navigate-left.enabled:hover {
-  border-right-color: #8c8c8c; }
+  border-right-color: white; }
 
 .reveal .controls div.navigate-right.enabled:hover {
-  border-left-color: #8c8c8c; }
+  border-left-color: white; }
 
 .reveal .controls div.navigate-up.enabled:hover {
-  border-bottom-color: #8c8c8c; }
+  border-bottom-color: white; }
 
 .reveal .controls div.navigate-down.enabled:hover {
-  border-top-color: #8c8c8c; }
+  border-top-color: white; }
 
 /*********************************************
  * PROGRESS BAR
@@ -251,7 +256,7 @@ body {
   background: rgba(0, 0, 0, 0.2); }
 
 .reveal .progress span {
-  background: #4c4c4c;
+  background: #dcdcdc;
   -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
@@ -260,4 +265,4 @@ body {
  * SLIDE NUMBER
  *********************************************/
 .reveal .slide-number {
-  color: #4c4c4c; }
+  color: #dcdcdc; }
