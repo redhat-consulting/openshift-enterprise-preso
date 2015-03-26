@@ -20,15 +20,27 @@
 
 // Override theme settings (see ../template/settings.scss)
 $mainFont: 'Overpass', sans-serif;
-$mainColor: #000;
+//$mainColor: #000;
+$mainColor: #A3DBE8;
 $headingFont: 'Overpass', sans-serif;
 $headingColor: #fff;
 $headingTextShadow: none;
 $headingTextTransform: uppercase;
-$backgroundColor: #820000;
-$linkColor: #4c4c4c;
+$backgroundColor: #004153; // blue
+//$backgroundColor: #cc0000; // red
+//$backgroundColor: #820000; // dark red
+$linkColor: #dcdcdc;
 $linkColorHover: lighten( $linkColor, 25% );
 $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
+
+@mixin bodyBackground() {
+  background: $backgroundColor;
+  background-image: url('/css/theme/source/Logo.png');
+  background-size: 20% auto;
+  background-attachment: local;
+  background-repeat: no-repeat;
+  background-position: 5% 95%;
+}
 
 section.has-light-background {
   &, h1, h2, h3, h4, h5, h6 {
